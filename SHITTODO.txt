@@ -2,13 +2,40 @@
 --- HOME ---
 ////////////
 
-=>RESPONSIVE
+//RESPONSIVE
+
+//GLOBALS
+=> Card
 
 //TOP HEADER
 => Hover change over left nav {LeftNav} ✔︎
-=> Hover change over right nav & Login Button {RightNav & LoginButton}
-=!!> Make Sign up {RightNav}
-=!!> Make Log in {LoginButton}
+=> Hover change over right nav & Login Button {RightNav & LoginButton} ✔︎
+=!!> Make Sign up {RightNav} AuthO
+=!!> Make Log in {LoginButton} AuthO
 
-=> Hover Anim on HomeSection { App }
+
+//HOME
+=> Hover Anim on HomeSection { HomeSection } ✔︎
+
+
+//ALL
+=> Make component
+=>Get all data from state
+=> Styles
+
+//SYNTHS
+=> Make component
+=>Filter data from state
+=> Styles
+
+//SAMPLERS
+=> Make component
+=>Filter data from state
+=> Styles
+
+
+//DRUM MACHINES
+=> Make component
+=>Filter data from state
+=> Styles
 
