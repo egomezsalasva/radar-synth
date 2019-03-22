@@ -1,0 +1,14 @@
+////////////
+--- HOME ---
+////////////
+
+=>RESPONSIVE
+
+//TOP HEADER
+=> Hover change over left nav {LeftNav} ✔︎
+=> Hover change over right nav & Login Button {RightNav & LoginButton}
+=!!> Make Sign up {RightNav}
+=!!> Make Log in {LoginButton}
+
+=> Hover Anim on HomeSection { App }
+
