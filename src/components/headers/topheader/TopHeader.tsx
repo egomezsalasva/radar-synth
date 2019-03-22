@@ -58,4 +58,5 @@ export default class TopHeader extends Component {
 // PARENT COMPONENT -> App
 
 // CHILD COMPONENTS -> LeftNav
-//                  -> RightNav -> LoginButton
+//                  -> RightNav -> SignUpButton
+//                              -> LoginButton

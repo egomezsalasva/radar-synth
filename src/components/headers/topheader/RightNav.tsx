@@ -2,6 +2,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 //COMPONENT IMPORTS
+import SignUpButton from './SignUpButton'
 import LoginButton from './LoginButton'
 
 
@@ -20,16 +21,24 @@ const RightNavContainer = styled.nav`
     } 
 `
 
+
 //MAIN COMPONENT
 export default class RightNav extends Component {
-  render() {
-    return (
-        <RightNavContainer>
-            <ul>
-                <a href="#"><li>Sign Up</li></a>
-                <LoginButton />
-            </ul>
-        </RightNavContainer>
-    )
-  }
+
+    render() {
+        return (
+            <RightNavContainer>
+                <ul>
+                    <SignUpButton/>
+                    <LoginButton />
+                </ul>
+            </RightNavContainer>
+        )
+    }
+
 }
+
+//PARENT COMPONENT -> TopHeader
+
+//CHILD COMPONENT -> SignUpButton
+//                -> LoginButton

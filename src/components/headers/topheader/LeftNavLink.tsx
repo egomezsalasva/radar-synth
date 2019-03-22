@@ -1,6 +1,6 @@
 //MODULE IMPORTS
 import React from 'react'
-import { TimelineLite } from "gsap";
+import { TimelineLite } from "gsap"
 
 
 
@@ -16,31 +16,31 @@ interface LeftNavLinkProps {
 export default class LeftNavLink extends React.Component<LeftNavLinkProps>{
 
     //TYPESCRIPT REFS
-    private linkNavRef: any;
-    private linkNavAnim: any;
+    private linkLeftNavRef: any;
+    private linkLeftNavAnim: any;
 
     constructor(props: LeftNavLinkProps){
         super(props)
         // Tween Ref Init
-		this.linkNavRef = null;
+		this.linkLeftNavRef = null;
 		// Tween Animation Init
-		this.linkNavAnim = null;
+		this.linkLeftNavAnim = null;
     }
 
     componentDidMount(){
 		// Tween Animation
-		this.linkNavAnim = new TimelineLite({ paused:true })
-			.to(this.linkNavRef, 0.4, { opacity: "1", ease: "Power1.easeInOut" })
+		this.linkLeftNavAnim = new TimelineLite({ paused:true })
+			.to(this.linkLeftNavRef, 0.4, { opacity: "1", ease: "Power1.easeInOut" })
 	}
 
     render() {
         return (
             <a 
                 href={this.props.leftNavHref} 
-                onMouseEnter={() => this.linkNavAnim.play()}
-                onMouseLeave={() => this.linkNavAnim.reverse()}
+                onMouseEnter={() => this.linkLeftNavAnim.play()}
+                onMouseLeave={() => this.linkLeftNavAnim.reverse()}
             >
-                <li ref={elem => this.linkNavRef = elem}>
+                <li ref={elem => this.linkLeftNavRef = elem}>
                     {this.props.leftNavTab}
                 </li>
             </a>
