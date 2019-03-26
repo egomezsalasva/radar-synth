@@ -1,32 +1,58 @@
-////////////
---- HOME ---
-////////////
 
 //RESPONSIVE
+=> Headers ✔︎
+=> OverlayMenu
+=> Home 
+
+
 
 //GLOBALS
 => Card
 
+
+
 //TOP HEADER
 => Hover change over left nav {LeftNav} ✔︎
 => Hover change over right nav & Login Button {RightNav & LoginButton} ✔︎
-=!!> Make Sign up {RightNav} AuthO
-=!!> Make Log in {LoginButton} AuthO
+=> Overlay Mobile Menu {OverlatMenu} -/React Portal?/-
+=!!> Make Sign up {RightNav} -/AuthO/-
+=!!> Make Log in {LoginButton} -/AuthO/-
+
+//SIGN UP 
+=> Make react portal for modal
+=> Form design with [ email, password, city ] -/Sketch/-
+=> Change sign up for My Orders tab
+=> If available Proceed to pay design  -/Sketch/-
+                                -> [text for security reasons - Name?, Sirname? Passport Photo? ]
+                                -> Credit Card Deets
+                                -> Payment succesful or failed send confirmation email
+
+
+
+//LOGIN
+=> Make react portal form modal
+=> Form design [email, password] -/Sketch/-
+
 
 
 //HOME
 => Hover Anim on HomeSection { HomeSection } ✔︎
 
 
+
 //ALL
-=> Make component
-=>Get all data from state
-=> Styles
+=> Make component ✔︎
+=>Get all data from local DB  ✔︎
+=> Styles 
+
+
 
 //SYNTHS
 => Make component
 =>Filter data from state
 => Styles
+
+
 
 //SAMPLERS
 => Make component
@@ -34,8 +60,16 @@
 => Styles
 
 
+
 //DRUM MACHINES
 => Make component
 =>Filter data from state
 => Styles
+
+
+
+//INNER PAGE INTRUMENTS
+=> Route url with name
+=> Get data through -/context API/-
+
 

@@ -9,6 +9,7 @@ body {
   font-size: 12px;
   font-weight: 300;
   background: #FAFCFF;
+  overflow-x: hidden;
 }
 
 ::selection{

@@ -18,7 +18,7 @@ interface HomeSectionProps {
 
 
 //STYLES
-const SectionTitle = styled.h1`
+const SectionTitle$tyle = styled.h1`
     position: absolute;
 	top: 33%;
 	left: 35px;
@@ -27,14 +27,26 @@ const SectionTitle = styled.h1`
 	font-weight: 300;
 	line-height: 40px;
 	color: #FAFCFF;
+    @media (max-width: 910px), screen and (orientation: portrait) {
+        position: static;
+        padding-top: 8.3vh;
+        padding-left: 35px;
+        font-size: 24px;
+        margin: 0;
+    }
 `
-const SectionLine = styled.div`
+const SectionLine$tyle = styled.div`
     position: absolute;
 	top: calc(33% + 65px);
 	left: 20px;
 	right: 20px;
 	height: 1px;
 	background: #FAFCFF;
+    @media (max-width: 910px), screen and (orientation: portrait) {
+        position: static;
+        margin: 10px 20px 0;
+        /* display: none; */
+    }
 `
 
 
@@ -68,8 +80,8 @@ export default class HomeSection extends Component<HomeSectionProps> {
                 onMouseLeave={() => this.homeSectionAnim.reverse()}
             >
                 <div className="sectionContainer">
-                    <SectionTitle ref={elem => this.sectionTitleRef = elem}>{this.props.sectionTitle}</SectionTitle>
-                    <SectionLine />
+                    <SectionTitle$tyle ref={elem => this.sectionTitleRef = elem}>{this.props.sectionTitle}</SectionTitle$tyle>
+                    <SectionLine$tyle />
                     <img className="imageSection" src={this.props.sectionSrc} alt={this.props.sectionAlt} />
                 </div>
             </a>

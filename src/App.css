@@ -3,133 +3,19 @@
 /*--------*/
 
 
-/* Top Header */
-/*------------*/
-
-.topHeader ul .activeLeftNav li{
-  opacity: 1;
-}
-
-.topHeader ul a .navLine{
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 1px;
-  background: #FFBF00;
-}
-
-.topHeader ul a .navLineActive{
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background: #FAFCFF;
-}
-
-
-
 /* Overlay Mobile Menu */
 /*---------------------*/
 
-/* Overlay style */
-.overlay {
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	background: red;
-}
-
 /* Overlay closing cross */
-.overlay .overlay-close {
-	width: 50px;
-	height: 50px;
-	position: absolute;
-	right: 15px;
-	top: 5px;
-	overflow: hidden;
-	border: none;
-	background: url(./img/cross.png) no-repeat center center;
-	text-indent: 200%;
-	color: transparent;
-	outline: none;
-	z-index: 300;
-}
+
 
 /* Menu style */
-.overlay nav {
-	text-align: center;
-	position: relative;
-	top: 50%;
-	height: 60%;
-	-webkit-transform: translateY(-50%);
-	transform: translateY(-50%);
-}
-
-.overlay ul {
-	list-style: none;
-	padding: 0;
-	margin: 0 auto;
-	display: inline-block;
-	height: 100%;
-	position: relative;
-}
-
-.overlay ul li {
-	display: block;
-	height: 20%;
-	height: calc(100% / 7);
-	min-height: 50px;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-}
-
-.overlay ul li a {
-	font-size: 28px;
-	font-weight: 300;
-	display: block;
-	color: #fff;
-	-webkit-transition: color 0.2s;
-	transition: color 0.2s;
-}
-
-.overlay ul li a:hover,
-.overlay ul li a:focus {
-	color: #f0f0f0;
-}
-
-/* Effects */
-html, body {
-	overflow-x: hidden;
-}
-
-.container {
-	overflow-x: hidden;
-	-webkit-transition: -webkit-transform 0.5s;
-	transition: transform 0.5s;
-}
 
 .container.overlay-open {
 	/* -webkit-transform: translateX(50%);
 	transform: translateX(50%); */
 }
 
-.container::after {
-	content: '';
-	opacity: 0;
-	visibility: hidden;
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: rgba(0,0,0,0.6);
-	-webkit-transition: opacity 0.5s, visibility 0s 0.5s;
-	transition: opacity 0.5s, visibility 0s 0.5s;
-}
 
 .container.overlay-open::after {
 	visibility: visible;
@@ -244,5 +130,341 @@ bottom: 14vh;;
 left: 22.8758169935%;
 width: 54.0983606557%;
 box-shadow: 3px 6px 12px 0px rgba(0,0,0,0.25);
+}
+
+
+
+@media (max-width: 910px), screen and (orientation: portrait) {
+
+  /* Home */
+
+
+  .section{
+    text-decoration: none;
+  }
+
+  .sectionContainer{
+    position:static;
+    height: calc(25vh - (60px / 4));
+    text-decoration: none;
+  }
+
+  .allSection .sectionContainer{
+    padding-top: 60px;
+    background: #05668D;
+  }
+
+  .synthSection .sectionContainer{
+    background: #028090;
+  }
+
+  .samplerSection .sectionContainer{
+    background: #00A896;
+  }
+
+  .drumSection .sectionContainer{
+    background: #02C39A;
+  }
+
+  .synthSection img{
+    display: none;
+  }
+
+
+  .offersContainer .allHeader{
+    padding-top: 60px;
+  }
+
+  .offersContainer .synthsHeader{
+    padding-top: 60px;
+  }
+
+  .offersContainer .samplersHeader{
+    padding-top: 60px;
+  }
+
+  .offersContainer .drumMachinesHeader{
+    padding-top: 60px;
+  }
+
+}
+
+
+/* Shared Offers */
+/*---------------*/
+
+.offersContainer{
+  position: relative;
+  grid-column-start: 2;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background: #FAFCFF;
+}
+
+.offersContainer .offersHeader {
+  position: relative;
+  width: 100%;
+  height: 140px;
+}
+
+
+.offersContainer .offersContent {
+  width: 100%;
+}
+
+.offersContentContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+  width: 88.5245901639%;
+  margin: calc(80px - 40px) auto;
+}
+
+.offersContentCard{
+  position: relative;
+  width: 300px;
+  height: 380px;
+  margin: 40px 30px;
+}
+
+.offersContentCard h2{
+  position: relative;
+  margin: 0;
+  top: 20px;
+  left: 20px;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.offersContentCard .cardImageCointainer{
+  position: relative;
+  width: 300px;
+  height: 160px;
+  top: calc(24px + 15px);
+}
+
+.offersContentCard .cardLine{
+  position: relative;
+  width: 260px;
+  height: 1px;
+  background: #000;
+  top: calc(39px + 17px);
+  left: 20px;
+}
+
+.offersContentCard .leftText{
+  position: relative;
+  display: inline-block;
+  width: 130px;
+  margin: 0;
+  top: calc(39px + 39px);
+  left: 20px;
+  font-size: 15px;
+  line-height: 23px;
+}
+
+.offersContentCard .rightText{
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  top: calc(39px + 39px);
+  right: calc(-120px + 20px);
+  text-align: right;
+  font-size: 17px;
+  line-height: 23px;
+  font-weight: 600;
+}
+
+.offersContentCard a{
+  position: absolute;
+  display: inline-block;
+  width: 180px;
+  height: 40px;
+  bottom: 0;
+  left: 60px;
+  font-size: 17px;
+  color: #FAFCFF;
+  line-height: 40px;
+  text-decoration: none;
+  text-align: center;
+}
+
+
+
+/* All Offers */
+/*------------*/
+
+.offersContainer .allHeader{
+  background-color: #05668D;
+}
+
+
+
+/* Synth Offers */
+/*--------------*/
+
+.offersContainer .synthsHeader{
+  background-color: #028090;
+}
+
+.offersContentCard .synthOffersButton{
+  background: #028090;
+  border: 1px solid #028090;
+}
+
+.offersContentCard .cardImageCointainer #arturiaMicrobrute{
+  position: absolute;
+  width: calc(140px + 24px);
+  top: calc(29px - 12px);
+  left: calc(80px - 12px);
+}
+
+.offersContentCard .cardImageCointainer #korgMicrokorg{
+  position: absolute;
+  width: calc(200px + 24px);
+  top: calc(33px - 12px);
+  left: calc(50px - 12px);
+}
+
+.offersContentCard .cardImageCointainer #novationMininova{
+  position: absolute;
+  width: calc(200px + 24px);
+  top: calc(31px - 12px);
+  left: calc(50px - 12px);
+}
+
+.offersContentCard .cardImageCointainer #korgMinilogue{
+  position: absolute;
+  width: calc(200px + 24px);
+  top: calc(18px - 12px);
+  left: calc(50px - 12px);
+}
+
+.offersContentCard .cardImageCointainer #elektronAnalogKeys{
+  position: absolute;
+  width: calc(240px + 24px);
+  top: calc(24px - 12px);
+  left: calc(30px - 12px);
+}
+
+.offersContentCard .cardImageCointainer #accessVirus{
+  position: absolute;
+  width: calc(220px + 24px);
+  top: calc(12px - 12px);
+  left: calc(40px - 12px);
+}
+
+
+
+/* Samplers Offers */
+/*-----------------*/
+
+.offersContainer .samplersHeader{
+  background-color: #00A896;
+}
+
+.offersContentCard .samplerOffersButton{
+  background: #00A896;
+  border: 1px solid #00A896;
+}
+
+.offersContentCard .cardImageCointainer #korgVolcaSample{
+  position: absolute;
+  width: calc(80px + 24px);
+  top: calc(58px - 12px);
+  left: calc(110px - 12px);
+}
+
+.offersContentCard .cardImageCointainer #akaiXR20{
+  position: absolute;
+  width: calc(120px + 24px);
+  top: calc(30px - 12px);
+  left: calc(90px - 12px);
+}
+
+.offersContentCard .cardImageCointainer #korgElectribe{
+  position: absolute;
+  width: calc(180px + 24px);
+  top: calc(27px - 12px);
+  left: calc(60px - 12px);
+}
+
+.offersContentCard .cardImageCointainer #elektronDigitakt{
+  position: absolute;
+  width: calc(120px + 24px);
+  top: calc(22px - 12px);
+  left: calc(80px - 12px);
+}
+
+.offersContentCard .cardImageCointainer #akaiMPClive{
+  position: absolute;
+  width: calc(180px + 24px);
+  top: calc(29px - 12px);
+  left: calc(60px - 12px);
+}
+
+.offersContentCard .cardImageCointainer #elektronOctatrack{
+  position: absolute;
+  width: calc(200px + 24px);
+  top: calc(22px - 12px);
+  left: calc(50px - 12px);
+}
+
+
+
+/* Drum Machines Offers */
+/*----------------------*/
+
+.offersContainer .drumMachinesHeader{
+  background-color: #02C39A;
+}
+
+.offersContentCard .drumMachinesOffersButton{
+  background: #02C39A;
+  border: 1px solid #02C39A;
+}
+
+.offersContentCard .cardImageCointainer #korgVolcaBeats{
+  position: absolute;
+  width: calc(80px + 24px);
+  top: calc(58px - 12px);
+  left: calc(110px - 12px);
+}
+
+.offersContentCard .cardImageCointainer #akaiTomCat{
+  position: absolute;
+  width: calc(140px + 24px);
+  top: calc(27px - 12px);
+  left: calc(80px - 12px);
+}
+
+.offersContentCard .cardImageCointainer #rolandBoutique{
+  position: absolute;
+  width: calc(160px + 24px);
+  top: calc(46px - 12px);
+  left: calc(70px - 12px);
+}
+
+.offersContentCard .cardImageCointainer #arturiaDrumbrute{
+  position: absolute;
+  width: calc(160px + 24px);
+  top: calc(24px - 12px);
+  left: calc(70px - 12px);
+}
+
+.offersContentCard .cardImageCointainer #rolandAira{
+  position: absolute;
+  width: calc(180px + 24px);
+  top: calc(20px - 12px);
+  left: calc(60px - 12px);
+}
+
+.offersContentCard .cardImageCointainer #elektronAnalogRytm{
+  position: absolute;
+  width: calc(180px + 24px);
+  top: calc(25px - 12px);
+  left: calc(60px - 12px);
 }
   
