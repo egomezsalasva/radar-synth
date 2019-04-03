@@ -14,26 +14,26 @@ export default class Home extends Component{
         return (
             <>
                 <HomeSection
-                    sectionLink="all.html"
+                    sectionLink="/all"
                     sectionStyle="allSection"
                     sectionTitle="All"
                 />
                 <HomeSection
-                    sectionLink="synths.html"
+                    sectionLink="/synths"
                     sectionStyle="synthSection"
                     sectionTitle="Synthesizers"
                     // sectionSrc={korgMinilogueIllustration}
                     // sectionAlt="Korg Minilogue Illustration"
                 />
                 <HomeSection
-                    sectionLink="samplers.html"
+                    sectionLink="/samplers"
                     sectionStyle="samplerSection"
                     sectionTitle="Samplers"
                     // sectionSrc={akaiMPCliveIllustration}
                     // sectionAlt="Akai MPC Live Illustration"
                 />
                 <HomeSection
-                    sectionLink="drummachines.html"
+                    sectionLink="/drummachines"
                     sectionStyle="drumSection"
                     sectionTitle="Drum Machines"
                     // sectionSrc={elektronAnalogIllustration}
@@ -43,3 +43,8 @@ export default class Home extends Component{
         )
     }
 }
+
+
+//PARENT COMPONENT -> App
+
+//CHILD COMPONENTS -> HomeSection

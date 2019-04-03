@@ -21,7 +21,6 @@ const LeftNavContainer = styled.nav`
 `
 
 
-
 //MAIN COMPONENT
 export default class LeftNav extends Component {
 
@@ -29,12 +28,12 @@ export default class LeftNav extends Component {
         return (
             <LeftNavContainer>
                 <ul>
-                    <LeftNavLink leftNavHref="#" leftNavTab="About Us"/>
-                    <LeftNavLink leftNavHref="all.html" leftNavTab="All"/>
-                    <LeftNavLink leftNavHref="synths.html" leftNavTab="Synthesizers"/>
-                    <LeftNavLink leftNavHref="samplers.html" leftNavTab="Samplers"/>
-                    <LeftNavLink leftNavHref="drummachines.html" leftNavTab="Drum Machines"/>
-                    <LeftNavLink leftNavHref="#" leftNavTab="Contact"/>
+                    <LeftNavLink leftNavHref="/about" leftNavTab="About"/>
+                    <LeftNavLink leftNavHref="/all" leftNavTab="All"/>
+                    <LeftNavLink leftNavHref="/synths" leftNavTab="Synthesizers"/>
+                    <LeftNavLink leftNavHref="/samplers" leftNavTab="Samplers"/>
+                    <LeftNavLink leftNavHref="/drummachines" leftNavTab="Drum Machines"/>
+                    <LeftNavLink leftNavHref="/contact" leftNavTab="Contact"/>
                 </ul>
             </LeftNavContainer>
         )

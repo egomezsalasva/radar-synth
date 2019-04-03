@@ -1,22 +1,18 @@
 
 //RESPONSIVE
-=> Headers ✔︎
 => OverlayMenu
-=> Home 
+=> Products
 
 
 
 //GLOBALS
-=> Card
-
 
 
 //TOP HEADER
-=> Hover change over left nav {LeftNav} ✔︎
-=> Hover change over right nav & Login Button {RightNav & LoginButton} ✔︎
 => Overlay Mobile Menu {OverlatMenu} -/React Portal?/-
 =!!> Make Sign up {RightNav} -/AuthO/-
 =!!> Make Log in {LoginButton} -/AuthO/-
+
 
 //SIGN UP 
 => Make react portal for modal
@@ -36,40 +32,36 @@
 
 
 //HOME
-=> Hover Anim on HomeSection { HomeSection } ✔︎
 
+
+//SHARED
+=> Arrows hover in button
+=> Fix CatalogueSubHeader
 
 
 //ALL
-=> Make component ✔︎
-=>Get all data from local DB  ✔︎
-=> Styles 
-
 
 
 //SYNTHS
-=> Make component
-=>Filter data from state
-=> Styles
-
 
 
 //SAMPLERS
-=> Make component
-=>Filter data from state
-=> Styles
-
 
 
 //DRUM MACHINES
-=> Make component
-=>Filter data from state
-=> Styles
+
 
 
 
 //INNER PAGE INTRUMENTS
 => Route url with name
-=> Get data through -/context API/-
+=> Get data from DB
+
+
+
+//USER VIEW
+=> change login button to Orders
+=> change sign up to log out 
+
 
 

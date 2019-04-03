@@ -1,6 +1,7 @@
 //MODULE IMPORTS
 import React, { Component } from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 //COMPONENT IMPORTS
 import MobileMenu from './MobileMenu'
 //IMAGE IMPORTS
@@ -91,9 +92,9 @@ export default class LeftHeader extends Component {
 
                     <img src={radarLogo} alt="#" />
                     
-                    <a href="index.html">
-                        <h1>Radar Synth</h1>
-                    </a>
+                    <Link to="/">
+                        <h1>Radar Synths</h1>
+                    </Link>
 
                     {/* <MobileMenu/> */}
 

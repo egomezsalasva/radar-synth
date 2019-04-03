@@ -9,26 +9,19 @@ import { SORTED_INSTRUMENTS_DB } from '../../databases/instruments'
 //STYLE IMPORTS -> APP
 import { CatalogueContainer$tyle, CatalogueContentContainer$tyle, CatalogueContent$tyle } from '../../App'
 
-const SuggestionsContainer$tyle = styled.div`
-    position: fixed;
-    height: 140px;
-    width: 100%;
-    bottom: -140px;;
-    background: #05668D;
-`
 
 //MAIN COMPONENT
-export default class All extends Component {
-
+export default class Samplers extends Component {
     render() {
         return(
             <CatalogueContainer$tyle>
 
-               <CatalogueSubheader catalogueSubheaderStyle="allHeader" catalogueSubheaderTitle="All" />
+               <CatalogueSubheader catalogueSubheaderStyle="samplersHeader" catalogueSubheaderTitle="Samplers" />
                 
                 <CatalogueContentContainer$tyle>
                     <CatalogueContent$tyle>
                        {SORTED_INSTRUMENTS_DB
+                            .filter( instrument => instrument.type === "sampler" )
                             .map( instrument =>
                                 <InstrumentCard
                                     catalogueCardHeading={instrument.name}
@@ -40,17 +33,16 @@ export default class All extends Component {
                                     buttonStyle={instrument.buttonStyle}
                                     buttonHref={instrument.buttonHref}
                                 />
-                        )}
+                            )}
                     </CatalogueContent$tyle>
                 </CatalogueContentContainer$tyle>
-                {/*<SuggestionsContainer$tyle> </SuggestionsContainer$tyle>*/}
+                
             </CatalogueContainer$tyle>
         )
     }
 } 
 
 //PARENT COMPONENTS -> App
-//PARENT STYLES     -> CatalogueContainer$tyle
 
 //CHILD COMPONENTS -> CatalogueSubheader
 //                 -> InstrumentCard

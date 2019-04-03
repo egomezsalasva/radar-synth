@@ -2,7 +2,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import { TimelineLite } from 'gsap'
-
+import { Link } from 'react-router-dom'
 
 
 
@@ -73,8 +73,8 @@ export default class HomeSection extends Component<HomeSectionProps> {
 
     render() {
         return (
-            <a 
-                href={this.props.sectionLink} 
+            <Link 
+                to={this.props.sectionLink} 
                 className={`section ${this.props.sectionStyle}`}
                 onMouseEnter={() => this.homeSectionAnim.play()}
                 onMouseLeave={() => this.homeSectionAnim.reverse()}
@@ -84,11 +84,11 @@ export default class HomeSection extends Component<HomeSectionProps> {
                     <SectionLine$tyle />
                     <img className="imageSection" src={this.props.sectionSrc} alt={this.props.sectionAlt} />
                 </div>
-            </a>
+            </Link>
         )
     }
 }
 
 
 
-//PARENT COMPONENT -> App
+//PARENT COMPONENT -> Home

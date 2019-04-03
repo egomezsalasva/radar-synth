@@ -1,7 +1,7 @@
 //MODULE IMPORTS
 import React from 'react'
 import { TimelineLite } from "gsap"
-
+import { Link } from 'react-router-dom'
 
 
 //TYPESCRIPT PROPS
@@ -35,15 +35,15 @@ export default class LeftNavLink extends React.Component<LeftNavLinkProps>{
 
     render() {
         return (
-            <a 
-                href={this.props.leftNavHref} 
+            <Link 
+                to={this.props.leftNavHref} 
                 onMouseEnter={() => this.linkLeftNavAnim.play()}
                 onMouseLeave={() => this.linkLeftNavAnim.reverse()}
             >
                 <li ref={elem => this.linkLeftNavRef = elem}>
                     {this.props.leftNavTab}
                 </li>
-            </a>
+            </Link>
         )
     }
 }

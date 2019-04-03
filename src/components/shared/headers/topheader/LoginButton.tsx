@@ -7,10 +7,10 @@ import { TimelineLite } from 'gsap'
 
 //STYLE
 const LoginButtonContainer = styled.a`
-    border: 1px solid #02C39A;
+    border: 1px solid #05668D;
     box-sizing: border-box;
     && li{
-        color: #02C39A;
+        color: #05668D;
         opacity: 1;
     } 
 `
@@ -36,7 +36,7 @@ export default class LoginButton extends Component {
     componentDidMount(){
 		// Tween Animation
 		this.loginButtonAnim = new TimelineLite({ paused:true })
-			.to(this.loginButtonRef, 0.4, { backgroundColor: "#02C39A", ease: "Power1.easeOut" })
+			.to(this.loginButtonRef, 0.4, { backgroundColor: "#05668D", ease: "Power1.easeOut" })
             .to(this.loginButtonTextRef, 0.4, { color: "white", ease: "Power1.easeOut" }, '-=0.4')
 	}
 

@@ -13,7 +13,8 @@ interface CatalogueSubheaderProps {
 const CatalogueSubheaderTitle$tyle = styled.div`
     {/* Same as titleSection but with different top */}
     position: absolute;
-    top: 20%;
+    {/*top: 20%;*/}
+    top: 30%;
     left: 35px;
     font-size: 2.1vw;
     font-family: 'GTAmerica-Regular';
@@ -23,6 +24,7 @@ const CatalogueSubheaderTitle$tyle = styled.div`
     @media (max-width: 910px), screen and (orientation: portrait) {
         {/* Same as titleSection but with different top */}
         position: static;
+        padding-top: 6.8vh;
         padding-top: 6.8vh;
         padding-left: 35px;
         font-size: 24px;
@@ -34,7 +36,7 @@ const CatalogueSubheaderLine$tyle = styled.div`
     width: 21.88%;
     height: 1px;
     background: #FAFCFF;
-    top: calc(20% + 2.1vw + 22px + 15px);
+    top: calc(20% + 2.1vw + 22px + 11px);
     left: 20px;
     @media (max-width: 910px), screen and (orientation: portrait) {
         position: static;
@@ -43,7 +45,29 @@ const CatalogueSubheaderLine$tyle = styled.div`
         margin-left: 20px;
     }
 `
-
+const FormSubheader$tyle = styled.form`
+    div{
+        position: absolute;
+        right: 50px;
+        top: 44px;
+        height: 50px;
+        width: 327px;
+        background: rgba(255,255,255,0.25);
+        input{
+            background: transparent;
+            width: calc(327px - 40px);
+            border: 0;
+            padding: 14px 20px;
+            font-size: 20px;
+            color: white;
+            outline: none;
+            ::placeholder{
+                color: white;
+                opacity: 0.66;
+            }
+        }
+    }    
+`
 
 //MAIN COMPONENT
 export default class CatalogueSubheader extends Component<CatalogueSubheaderProps> {
@@ -52,6 +76,11 @@ export default class CatalogueSubheader extends Component<CatalogueSubheaderProp
         <div className={`offersHeader ${this.props.catalogueSubheaderStyle}`} >
             <CatalogueSubheaderTitle$tyle>{this.props.catalogueSubheaderTitle}</CatalogueSubheaderTitle$tyle>
             <CatalogueSubheaderLine$tyle />
+            <FormSubheader$tyle>
+                <div>
+                    <input type="text" placeholder="Search"/>
+                </div>
+            </FormSubheader$tyle>
         </div>
     )
   }

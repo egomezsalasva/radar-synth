@@ -22,7 +22,7 @@ import accessVirus from '../img/accessVirus.png';
 
 
 //INSTRUMENT DATABASE
-const INSTRUMENTS_DB = [
+export const INSTRUMENTS_DB = [
     {
       name: "Korg Volca Beats",
       type: "drum machine",
@@ -69,17 +69,20 @@ const INSTRUMENTS_DB = [
     },
     {
       name: "Arturia Microbrute",
-      type: "Synthesizer",
-      polyphony: "Monophonic",
-      skillLevel: "Intermediate",
-      presets: "No",
+      type: "Synthesizer", 
       imageId: "arturiaMicrobrute",
       imageSrc: arturiaMicrobrute,
       imageAlt: "Arturia Microbrute Image",
       pricePerWeek: 35,
       pricePerDay: 19,
       buttonStyle: "synthOffersButton",
-      buttonHref: "/arturia-microbrute.html"
+      buttonHref: "/arturia-microbrute",
+      //product page
+      productImageId: "arturiaMicrobrute01",
+      productType: "Synth",
+      productPolyphony: "Monophonic",
+      productSkillLevel: "Intermediate",
+      productPresets: "No",
     },
     {
       name: "Akai XR-20",
@@ -133,7 +136,7 @@ const INSTRUMENTS_DB = [
       imageAlt: "Arturia Drumbrute Image",
       pricePerWeek: 42,
       pricePerDay: 20,
-      buttonStyle: "samplerOffersButton",
+      buttonStyle: "drumMachinesOffersButton",
       buttonHref: "/arturia-drumbrute.html"
     },
     {
